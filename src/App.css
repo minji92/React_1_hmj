@@ -1,38 +1,44 @@
-.App {
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.habit {
+  font-size: 2.5em;
+  padding: 0.5em;
+  list-style: none;
+}
+
+.habit-count {
+  display: inline-block;
   text-align: center;
+  font-size: 1.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.4rem;
+  margin-left: 0.2em;
+  margin-right: 0.5em;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.habit-button {
+  font-size: 1em;
+  margin: 0 0.1em;
+  background-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.habit-button:hover {
+  opacity:0.8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.habit-increase,
+.habit-decrease {
+  color: goldenrod;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.habit-delete {
+  color: red;
 }
